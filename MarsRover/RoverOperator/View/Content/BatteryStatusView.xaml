@@ -1,0 +1,69 @@
+﻿<UserControl x:Class="RoverOperator.Content.BatteryStatusView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="350" Margin="0" FontSize="12">
+    <UserControl.Resources>
+        <BooleanToVisibilityConverter x:Key="BoolVisibilityConverter" />
+    </UserControl.Resources>
+    <StackPanel VerticalAlignment="Top" Margin="0" HorizontalAlignment="Left">   
+        <TextBlock Text="Cells" HorizontalAlignment="Center"/>
+        <StackPanel Orientation="Horizontal" Margin="0,0,0,15">
+            <StackPanel Margin="0" Width="50" x:Name="cellPanel1">
+                <TextBlock Text="{Binding Path=Battery.Cells[0].CellID}" HorizontalAlignment="Center" />
+                <ProgressBar x:Name="cellBar1" Minimum="0" Maximum="1" Value="1" Height="40" IsIndeterminate="False" Margin="0,0,0,0" Width="16" Orientation="Vertical" Foreground="Lime" />
+                <TextBlock Text="{Binding Path=Battery.Cells[0].Voltage, StringFormat='V: {0} '}" HorizontalAlignment="Center" />
+            </StackPanel>
+            <StackPanel Margin="0" Width="50" x:Name="cellPanel2">
+                <TextBlock Text="{Binding Path=Battery.Cells[1].CellID}" HorizontalAlignment="Center" />
+                <ProgressBar x:Name="cellBar2" Minimum="0" Maximum="1" Value="1" Height="40" IsIndeterminate="False" Margin="0,0,0,0" Width="16" Orientation="Vertical" Foreground="Lime"/>
+                <TextBlock Text="{Binding Path=Battery.Cells[1].Voltage, StringFormat='V: {0} '}" HorizontalAlignment="Center" />
+            </StackPanel>
+            <StackPanel Margin="0" Width="50" x:Name="cellPanel3">
+                <TextBlock Text="{Binding Path=Battery.Cells[2].CellID}" HorizontalAlignment="Center" />
+                <ProgressBar x:Name="cellBar3" Minimum="0" Maximum="1" Value="1" Height="40" IsIndeterminate="False" Margin="0,0,0,0" Width="16" Orientation="Vertical" Foreground="Lime"/>
+                <TextBlock Text="{Binding Path=Battery.Cells[2].Voltage, StringFormat='V: {0} '}" HorizontalAlignment="Center" />
+            </StackPanel>
+            <StackPanel Margin="0" Width="50" x:Name="cellPanel4">
+                <TextBlock Text="{Binding Path=Battery.Cells[3].CellID}" HorizontalAlignment="Center" />
+                <ProgressBar x:Name="cellBar4" Minimum="0" Maximum="1" Value="1" Height="40" IsIndeterminate="False" Margin="0,0,0,0" Width="16" Orientation="Vertical" Foreground="Lime"/>
+                <TextBlock Text="{Binding Path=Battery.Cells[3].Voltage, StringFormat='V: {0} '}" HorizontalAlignment="Center" />
+            </StackPanel>
+            <StackPanel Margin="0" Width="50" x:Name="cellPanel5">
+                <TextBlock Text="{Binding Path=Battery.Cells[4].CellID}" HorizontalAlignment="Center" />
+                <ProgressBar x:Name="cellBar5" Minimum="0" Maximum="1" Value="1" Height="40" IsIndeterminate="False" Margin="0,0,0,0" Width="16" Orientation="Vertical" Foreground="Lime"/>
+                <TextBlock Text="{Binding Path=Battery.Cells[4].Voltage, StringFormat='V: {0} '}" HorizontalAlignment="Center" />
+            </StackPanel>
+            <StackPanel Margin="0" Width="50" x:Name="cellPanel6">
+                <TextBlock Text="{Binding Path=Battery.Cells[5].CellID}" HorizontalAlignment="Center" />
+                <ProgressBar x:Name="cellBar6" Minimum="0" Maximum="1" Value="1" Height="40" IsIndeterminate="False" Margin="0,0,0,0" Width="16" Orientation="Vertical" Foreground="Lime"/>
+                <TextBlock Text="{Binding Path=Battery.Cells[5].Voltage, StringFormat='V: {0} '}" HorizontalAlignment="Center" />
+            </StackPanel>
+            <StackPanel Margin="0" Width="50" x:Name="cellPanel7">
+                <TextBlock Text="{Binding Path=Battery.Cells[6].CellID}" HorizontalAlignment="Center" />
+                <ProgressBar x:Name="cellBar7" Minimum="0" Maximum="1" Value="1" Height="40" IsIndeterminate="False" Margin="0,0,0,0" Width="16" Orientation="Vertical" Foreground="Lime"/>
+                <TextBlock Text="{Binding Path=Battery.Cells[6].Voltage, StringFormat='V: {0} '}" HorizontalAlignment="Center" />
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Margin="10,0,0,0">            
+            <TextBlock Text="{Binding Path=Battery.ChargePerc, StringFormat='Charge: ({0}%)'}" />
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="{Binding Path=Battery.Current, StringFormat='Current: {0} A'}" Margin="0,0,5,0" />
+                <Image Source="../../Assets/icons/error.png" Width="16" Height="16" 
+                    Visibility="{Binding Path=IsDangerousCurrent, Converter={StaticResource ResourceKey=BoolVisibilityConverter}, UpdateSourceTrigger=PropertyChanged}"/>
+                <Image Source="../../Assets/icons/warning.png" Width="16" Height="16"
+                    Visibility="{Binding Path=IsWarningCurrent, Converter={StaticResource ResourceKey=BoolVisibilityConverter}, UpdateSourceTrigger=PropertyChanged}"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="{Binding Path=Battery.Temperature, StringFormat='Temperature: {0} C'}" Margin="0,0,5,0" />
+                <Image Source="../../Assets/icons/error.png" Width="16" Height="16" 
+                    Visibility="{Binding Path=IsDangerousTemperature, Converter={StaticResource ResourceKey=BoolVisibilityConverter}, UpdateSourceTrigger=PropertyChanged}"/>
+                <Image Source="../../Assets/icons/warning.png" Width="16" Height="16"
+                    Visibility="{Binding Path=IsWarningTemperature, Converter={StaticResource ResourceKey=BoolVisibilityConverter}, UpdateSourceTrigger=PropertyChanged}"/>
+            </StackPanel>            
+        </StackPanel>
+        
+    </StackPanel>
+</UserControl>
