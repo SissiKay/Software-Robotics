@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D5922DA6-37CF-4A01-91FB-3FB176B3F716}</ProjectGuid>
+    <ProjectGuid>{0FED64BF-5840-47FE-958B-4983C53D0BC6}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>MarsRover</RootNamespace>

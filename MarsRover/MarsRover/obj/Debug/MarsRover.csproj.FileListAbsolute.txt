@@ -1,0 +1,14 @@
+C:\Users\doomfest\Desktop\Software-Robotics\MarsRover\MarsRover\bin\Debug\MarsRover.exe.config
+C:\Users\doomfest\Desktop\Software-Robotics\MarsRover\MarsRover\bin\Debug\MarsRover.exe
+C:\Users\doomfest\Desktop\Software-Robotics\MarsRover\MarsRover\bin\Debug\MarsRover.pdb
+C:\Users\doomfest\Desktop\Software-Robotics\MarsRover\MarsRover\bin\Debug\Microsoft.Xna.Framework.dll
+C:\Users\doomfest\Desktop\Software-Robotics\MarsRover\MarsRover\bin\Debug\Microsoft.Xna.Framework.xml
+C:\Users\doomfest\Desktop\Software-Robotics\MarsRover\MarsRover\obj\Debug\MainWindow.baml
+C:\Users\doomfest\Desktop\Software-Robotics\MarsRover\MarsRover\obj\Debug\MainWindow.g.cs
+C:\Users\doomfest\Desktop\Software-Robotics\MarsRover\MarsRover\obj\Debug\App.g.cs
+C:\Users\doomfest\Desktop\Software-Robotics\MarsRover\MarsRover\obj\Debug\MarsRover_MarkupCompile.cache
+C:\Users\doomfest\Desktop\Software-Robotics\MarsRover\MarsRover\obj\Debug\MarsRover.g.resources
+C:\Users\doomfest\Desktop\Software-Robotics\MarsRover\MarsRover\obj\Debug\MarsRover.Properties.Resources.resources
+C:\Users\doomfest\Desktop\Software-Robotics\MarsRover\MarsRover\obj\Debug\MarsRover.csproj.GenerateResource.Cache
+C:\Users\doomfest\Desktop\Software-Robotics\MarsRover\MarsRover\obj\Debug\MarsRover.exe
+C:\Users\doomfest\Desktop\Software-Robotics\MarsRover\MarsRover\obj\Debug\MarsRover.pdb

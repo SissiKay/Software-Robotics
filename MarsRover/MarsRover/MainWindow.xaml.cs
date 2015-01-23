@@ -18,6 +18,9 @@ using Microsoft.Xna.Framework.Input;
 
 namespace MarsRover
 {
+    /// <summary>
+    /// Interaction logic for MainWindow.xaml
+    /// </summary>
     public partial class MainWindow : Window
     {
         public MainWindow()
@@ -26,10 +29,8 @@ namespace MarsRover
 
             while (GamePad.GetState(PlayerIndex.One).Buttons.Back != ButtonState.Pressed)
             {
-                if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
+                if (GamePad.GetState(PlayerIndex.One).Buttons.A == ButtonState.Pressed)
                     Console.WriteLine("Pressed A.");
-
-
             }
         }
     }
